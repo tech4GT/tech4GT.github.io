@@ -35,13 +35,9 @@ Any module must follow this basic format:
 ```js
 module.exports = function ModuleName(options,UI) {
 
-  options = options || {};
-  UI.onSetup(options.step);
   var output;
 
   function draw(input,callback) {
-
-    UI.onDraw(options.step); // tell the UI to "draw"
 
     var output = function(input){
       /* do something with the input */
@@ -49,9 +45,7 @@ module.exports = function ModuleName(options,UI) {
     }
 
     this.output = output(input); // run the output and assign it to this.output
-    options.step.output = output.src;
     callback();
-    UI.onComplete(options.step); // tell UI we are done
   }
 
   return {
