@@ -1,0 +1,11 @@
+{
+  "name": "Decode QR",
+  "description": "Search for and decode a QR code in the image",
+  "inputs": {
+  },
+  "outputs": {
+    "qrval": {
+      "type": "text"
+    }
+  }
+}
