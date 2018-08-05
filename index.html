@@ -1,43 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" ,viewport-fit='cover'>
 
     <title>tech4gt - Varun Gupta</title>
     <link rel=stylesheet type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-<style>
-a{
-color: white;
-}
-.list-inline-item{
-padding: 10px;
-}
-</style>
+    <style>
+        a {
+            color: white;
+        }
+
+        .list-inline-item {
+            padding: 10px;
+        }
+
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden
+        }
+
+        body {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .hidden-span {
+            padding-left: 10px;
+            display: none;
+        }
+
+        @media only screen and (max-width: 532px) {
+            .list-inline {
+                padding-left: 20px !important;
+            }
+            .list-inline-item {
+                display: block;
+            }
+            .hidden-span {
+                display: inline;
+            }
+            #main-image {
+                display: none !important;
+            }
+            body {
+                background-position-x: -75px !important;
+            }
+        }
+
+        @media only screen and (max-width: 350px) {
+            body {
+                background-position-x: -130px !important;
+            }
+        }
+    </style>
 
 
 </head>
-<body style="background-image: url('./images/back.jpg');color: white">
-<header>
-    <h1 style="letter-spacing: 15px;padding-top: 30px;padding-left: 30px;font-family: 'Merriweather Sans',sans-serif;font-size: 50px" class="display-4">VARUN GUPTA</h1>
-    <ul class="list-inline" style="padding-left: 100px">
-    <li class="list-inline-item"><a href="https://www.github.com/tech4gt"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-    <li class="list-inline-item"><a href="https://www.facebook.com/varunvasta"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
-    <li class="list-inline-item"><a href="https://www.linkedin.com/in/tech4gt/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-    <li class="list-inline-item"><a href="https://medium.com/@varungupta_49430"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a></li>
-    <li class="list-inline-item"><a href="https://www.quora.com/profile/Varun-Gupta-384"><i class="fa fa-quora fa-2x" aria-hidden="true"></i></a></li>
-</ul>
-</header>
 
-<img style="padding-top: 5%" src="images/main.png" class="mx-auto d-block text-center img-fluid justify-content-center">
+<body style="background-image: url('./images/back.jpg');color: white;">
+    <header>
+        <h1 style="letter-spacing: 15px;padding-top: 30px;padding-left: 30px;font-size: 50px" class="display-4">VARUN GUPTA</h1>
+        <ul class="list-inline" style="padding-left: 100px">
+            <li class="list-inline-item">
+                <a href="https://www.github.com/tech4gt">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    <h3 class="hidden-span"> Github</h3>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/varunvasta">
+                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                    <h3 class="hidden-span"> Facebook</h3>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/tech4gt/">
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    <h3 class="hidden-span"> Linkedin</h3>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://medium.com/@varungupta_49430">
+                    <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
+                    <h3 class="hidden-span"> Medium</h3>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.quora.com/profile/Varun-Gupta-384">
+                    <i class="fa fa-quora fa-2x" aria-hidden="true"></i>
+                    <h3 class="hidden-span"> Quora</h3>
+                </a>
+            </li>
+        </ul>
+    </header>
 
+    <img id="main-image" style="padding-top: 5%" src="images/main.png" class="mx-auto d-block text-center img-fluid justify-content-center">
 
-
-
-
-    <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="application/javascript" src="js/popper.min.js"></script>
-    <script type="application/javascript" src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
